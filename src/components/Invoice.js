@@ -30,10 +30,10 @@ function Invoice({ data, invoiceNumber }) {
         <div className="invoice-header">
           <div className="invoice-title">Invoice</div>
           <div className="company-info">
-            7 STONES<br />
+            Z-Stripe<br />
             PO BOX 808<br />
             TARPON SPRINGS, FL 34688<br />
-            (855) 659-9406
+            (863) 859-6206
           </div>
           <div className="invoice-number">{invoiceNumber.toString().padStart(6, '0')}</div>
         </div>
