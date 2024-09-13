@@ -1,0 +1,48 @@
+.dropzone {
+  border: 2px dashed #cccccc;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.dropzone:hover {
+  border-color: #666666;
+  background-color: #f9f9f9;
+}
+
+.dropzone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropzone p {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  color: #333333;
+}
+
+.select-file-btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.select-file-btn:hover {
+  background-color: #45a049;
+}

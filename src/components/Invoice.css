@@ -1,0 +1,103 @@
+.invoice-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.invoice {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.invoice-header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.invoice-title {
+  font-size: 24px;
+  color: #333;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.company-info {
+  text-align: left;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.invoice-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  color: #888;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.invoice-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.invoice-table .header-row td {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.invoice-totals {
+  text-align: right;
+  font-size: 14px;
+}
+
+.invoice-totals div {
+  margin-bottom: 5px;
+}
+
+.invoice-totals .total {
+  font-weight: bold;
+}
+
+.download-btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+}
+
+@media print {
+  .download-btn {
+    display: none;
+  }
+}
