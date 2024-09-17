@@ -8,6 +8,8 @@ function App() {
   const [file, setFile] = useState(null);
   const [extractedData, setExtractedData] = useState(null);
   const [invoiceNumber, setInvoiceNumber] = useState(1);
+  const [password, setPassword] = useState('');
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const handleFileUpload = (uploadedFile) => {
     setFile(uploadedFile);
@@ -18,6 +20,36 @@ function App() {
     setExtractedData(data);
     setInvoiceNumber(prevNumber => prevNumber + 1);
   };
+
+  const handlePasswordSubmit = (e) => {
+    e.preventDefault();
+    if (password === '9000') {
+      setIsAuthenticated(true);
+    } else {
+      alert('Incorrect password. Please try again.');
+    }
+  };
+
+  if (!isAuthenticated) {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1>AI Scanner</h1>
+        </header>
+        <main className="App-main">
+          <form onSubmit={handlePasswordSubmit}>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Enter password"
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </main>
+      </div>
+    );
+  }
 
   return (
     <div className="App">
